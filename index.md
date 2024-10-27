@@ -1,29 +1,35 @@
 ---
-title: "Instructie template"
-date: 2024-09-20T15:51:01+02:00
+title: "Streepjescodes"
+date: 2024-09-29T20:53:27+02:00
 draft: false
 toc: true
 headercolor: "teal-background"
-onderwerp: Python 
+onderwerp: Javascript
 ---
 
-> Korte introductie dat wordt getoond in het overzicht van alle instructies
+Ooit afgevraagd hoe streepjescodes werken?
 
 <!--more-->
 
-> Te doen:
-> 1. Pas [FrontMatter](https://gohugo.io/content-management/front-matter/) aan boven in dit bestand.
->    - `title` naar een passende titel bij deze instructie
->    - `data` naar vandaag
->    - `onderwerp` naar de gebruikte techniek aanpassen, bijvoorbeeld Python (wordt gebruikt om te sorteren per onderwerp)
-> 2. Denk qua structuur aan:
->   - Introductie van het onderwerp
->   - Wat heb je nodig (programma's/materialen)
->   - De instructie zelf verdeelt over stappen; het is fijn als kinderen per stap al resultaat kunnen zien
->   - Afronding met bijvoorbeeld uitdagingen op basis van het geleerde en/of linkjes naar pagina's met nog meer informatie over het onderwerp
-> 3. Laat onderstaande licentie staan
-> 
-> Bekijk [deze uitleg](https://github.com/coderdojonijmegen/hugo-coderdojo-nijmegen/blob/main/README.md) over hoe je kunt zien
-> hoe je instructies er uit zien in de site.  
+<script src="main.js"></script>
+  <script>
+    //ask before reload source: https://stackoverflow.com/questions/10311341/confirmation-before-closing-of-tab-browser
+    window.onbeforeunload = function (e) {
+      e = e || window.event;
 
-{{< licentie rel="http://creativecommons.org/licenses/by-nc-sa/4.0/">}}
+      // For IE and Firefox prior to version 4
+      if (e) {
+        e.returnValue = 'Sure?';
+      }
+
+      // For Safari
+      return 'Sure?';
+    };
+  </script>
+
+  <div id="myapp"></div>
+  <script>
+    var app = Elm.Main.init({
+      node: document.getElementById('myapp')
+    });
+  </script>
